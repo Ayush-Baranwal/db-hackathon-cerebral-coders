@@ -1,0 +1,114 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 15%;
+    background-color: #3498db;
+    text-align: center;
+    position: relative;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    transition : all .5s ease;
+    h1{
+      font-size: 32px;
+      color: #fff;
+      line-height: 10%;
+      text-transform: uppercase;
+      font-weight: 100;
+      transition : all .3s ease;
+    }
+    nav{
+      position: absolute;
+      bottom: 0;
+      height: 60px;
+      line-height: 60px;
+      width: 100%;
+      background-color: rgba(0,0,0,.1);
+      a{
+        color: #fff;
+        display: inline-block;
+        padding: 10px 15px;
+        line-height: 1;
+        text-decoration: none;
+        border-radius: 2px;
+          &:hover{
+            box-shadow : 0 0 0 1px #fff;
+          }
+      }
+    }
+  }
+
+.footer{
+    height: 10%;
+    width: 100%;
+    background:#3498db;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+}
+    
+.footer .row{
+    padding:2px 0%;
+    color:white;
+    font-size:0.8em;
+}
+    
+.footer .row a{
+    text-decoration:none;
+    color:white;
+    transition:0.5s;
+}
+    
+.footer .row a:hover{
+    color:#fff;
+}
+    
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+}
+    
+.footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+}
+    
+@media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+}
+
+
+.wrapper {
+    height: 75%;  
+    overflow-y: auto;  
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    height: 100%;
+    position: relative;
+}
+ 
+.app-header {
+    height: 15%;
+    width: 100%;
+}
+
+.app-footer {
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}

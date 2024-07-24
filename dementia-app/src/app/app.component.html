@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="app-header">
+    <header>
+        <h1>Dementia CARE</h1>
+        <nav>
+          <a routerLink="">Home</a>
+          <a routerLink="/info">Information And Care</a>
+          <a routerLink="/contact">Contact</a>
+          <a routerLink="/services">24x7 Support</a>
+          <a routerLink="/medication">Medication Management</a>
+        </nav>
+    </header>
+  </div>
+  <div class="wrapper">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="app-footer">
+    <app-chatbot></app-chatbot>
+    <footer>
+      <div class="footer">
+        <div class="row">
+            <ul>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+        <div class="row">
+            Dementia Uk
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>

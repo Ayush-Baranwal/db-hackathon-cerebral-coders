@@ -1,0 +1,8 @@
+<!-- src/app/medication-list/medication-list.component.html -->
+<ul>
+    <li *ngFor="let medication of medications" style="margin-left: 50px;">
+      {{ medication.name }} ({{ medication.dosage }}) - {{ medication.frequency }}
+      <button (click)="deleteMedication(medication.id)">Delete</button>
+    </li>
+</ul>
+  

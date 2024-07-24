@@ -1,0 +1,63 @@
+// Style the list container
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  // Style each list item
+  li {
+    
+    width: 200px;
+    background-color: #ffffff; // White background for the list items
+    border: 1px solid #e0e0e0; // Light gray border
+    border-radius: 8px; // Rounded corners
+    margin: 10px 0; // Space between list items
+    padding: 15px; // Padding inside each list item
+    display: flex; // Use flexbox to align items
+    justify-content: space-between; // Space between content and button
+    align-items: center; // Center items vertically
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    transition: all 0.3s ease; // Smooth transition for hover effects
+  
+    &:hover {
+      background-color: #f9f9f9; // Slightly darker background on hover
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Slightly more pronounced shadow
+    }
+  }
+  
+  // Style the button
+  button {
+    background-color: #ff4d4f; // Red background color
+    color: #ffffff; // White text color
+    border: none; // Remove default border
+    border-radius: 5px; // Rounded corners
+    padding: 8px 12px; // Padding inside the button
+    cursor: pointer; // Pointer cursor on hover
+    font-size: 14px; // Font size
+    transition: background-color 0.3s ease; // Smooth transition for background color
+  
+    &:hover {
+      background-color: #e03c3c; // Darker red on hover
+    }
+  }
+  
+  // Optional: Style the text inside the list items for better readability
+  li {
+    .medication-details {
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+    }
+  
+    .medication-name {
+      font-weight: bold; // Bold medication name
+      color: #333; // Dark text color for name
+    }
+  
+    .medication-dosage,
+    .medication-frequency {
+      color: #666; // Lighter text color for dosage and frequency
+    }
+  }
+  

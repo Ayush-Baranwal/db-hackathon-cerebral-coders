@@ -1,0 +1,20 @@
+<div class="chatbot-container" *ngIf="isOpen">
+    <div class="chatbot-header" (click)="toggleChat()">
+      Hi!! How can I help You ?
+    </div>
+    <div class="chatbot-messages">
+      <div *ngFor="let message of messages">
+        <div>{{ message }}</div>
+      </div>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" [(ngModel)]="userInput" (keyup.enter)="sendMessage()" placeholder="Ask a question...">
+      <button (click)="sendMessage()">Send</button>
+    </div>  
+</div>
+<button class="chatbot-toggler" (click)="toggleChat()">
+    <span class="material-symbols-outlined" *ngIf="!isOpen">contact_support</span>
+    <span class="material-symbols-outlined" *ngIf="isOpen">close</span>
+</button>
+
+  

@@ -1,0 +1,65 @@
+.section {
+    margin-bottom: 2rem;
+  }
+  
+  .inner-contact {
+    display: flex;
+  }
+  .section h2 {
+    padding-left: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: #3498db;
+    font-weight: 700; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .contact-info {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-details {
+    flex: 1;
+  }
+  
+  .contact-form {
+    flex: 1;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  }
+  
+  .contact-form label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #2980b9;
+  }

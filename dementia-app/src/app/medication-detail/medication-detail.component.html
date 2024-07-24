@@ -1,0 +1,12 @@
+<!-- src/app/medication-detail/medication-detail.component.html -->
+<div *ngFor="let medication of medications">
+    <div style="margin-left: 50px;">
+        <h2>{{ medication.name }}</h2>
+        <p>Dosage: {{ medication.dosage }}</p>
+        <p>Frequency: {{ medication.frequency }}</p>
+        <p>Start Date: {{ medication.startDate | date }}</p>
+        <p>End Date: {{ medication.endDate | date }}</p>
+        <button (click)="setReminder(medication)">Set Reminder</button>
+    </div>
+</div>
+  
